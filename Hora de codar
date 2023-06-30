@@ -1,0 +1,17 @@
+< meta  charset =" utf-8 " >
+<script> _ _
+	//questão 1:
+	
+	var  num1  =  parseFloat ( prompt ( 'Escreva o primeiro número' ) )
+	var  num2  =  parseFloat ( prompt ( 'Escreva o segundo Número' ) )
+	
+
+	if  ( num1  >  num2 )  {
+		documento . escrever ( num1 )
+	} 
+
+	else  if  ( num2  >  num1 )  {
+		documento . escreva ( num2 )
+	}
+
+</ script >
