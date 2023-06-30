@@ -1,0 +1,73 @@
+<!DOCTYPEhtml >
+<html> _ _
+< cabeça >
+	< title > Micro Calculadora </ title >
+	< meta  charset =" utf-8 " >
+	< meta  name =" janela de visualização " conteúdo =" largura=largura do dispositivo, escala inicial=1,0 " >
+	< tipo de estilo  =" texto/css " >
+		entrada [ tipo = número ] {
+			largura :  100 % ;
+			preenchimento :  12 px  20 px ;
+			margem :  8 px  0 ;
+			tamanho da caixa : caixa de borda;
+			borda :  2 px sólido # ccc ;
+			raio da borda :  4 px ;
+			cor de fundo :  # f8f8f8 ;
+			tamanho da fonte :  20 px ;
+		}
+
+		entrada [ tipo = botão ]{
+			cor de fundo :  # 4CAF50 ;
+			fronteira : nenhum;
+			cor : branco;
+			preenchimento :  16 px  32 px ;
+			decoração de texto : nenhum;
+			margem :  4 px  2 px ;
+			cursor : ponteiro;
+			tamanho da fonte :  20 px ;
+		}
+	</estilo> _ _
+</ cabeça >
+< corpo >
+	< h2 > Micro Calculadora </ h2 >
+	< input  type =" número " id =" num1 " placeholder =" Digite o primeiro número " >
+	< input  type =" número " id =" num2 " placeholder =" Digite o segundo número " >
+
+	< tipo de entrada  =" botão " valor =" + " onclick =" add() " >
+	< tipo de entrada  =" botão " valor =" - " onclick =" sub() " >
+	< tipo de entrada  =" botão " valor =" * " onclick =" mul() " >
+	< tipo de entrada  =" botão " valor =" / " onclick =" div() " >
+
+	< p  id =" resultado " > </ p >
+
+	< tipo de script  =" texto/javascript " >
+		função  adicionar ( ) {
+			var  num1  =  parseInt ( document . getElementById ( 'num1' ) . value ) ;
+			var  num2  =  parseInt ( document . getElementById ( 'num2' ) . value ) ;
+			var  resultado  =  num1  +  num2 ;
+			documento . getElementById ( 'resultado' ) . innerHTML  =  "Resultado: "  +  resultado ;
+		}
+
+		função  sub ( ) {
+			var  num1  =  parseInt ( document . getElementById ( 'num1' ) . value ) ;
+			var  num2  =  parseInt ( document . getElementById ( 'num2' ) . value ) ;
+			var  resultado  =  num1  -  num2 ;
+			documento . getElementById ( 'resultado' ) . innerHTML  =  "Resultado: "  +  resultado ;
+		}
+
+		função  mul ( ) {
+			var  num1  =  parseInt ( document . getElementById ( 'num1' ) . value ) ;
+			var  num2  =  parseInt ( document . getElementById ( 'num2' ) . value ) ;
+			var  resultado  =  num1  *  num2 ;
+			documento . getElementById ( 'resultado' ) . innerHTML  =  "Resultado: "  +  resultado ;
+		}
+
+		função  div ( ) {
+			var  num1  =  parseInt ( document . getElementById ( 'num1' ) . value ) ;
+			var  num2  =  parseInt ( document . getElementById ( 'num2' ) . value ) ;
+			var  resultado  =  num1  /  num2 ;
+			documento . getElementById ( 'resultado' ) . innerHTML  =  "Resultado: "  +  resultado ;
+		}
+	</ script >
+</ corpo >
+</html> _ _
